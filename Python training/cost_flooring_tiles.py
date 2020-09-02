@@ -1,0 +1,5 @@
+w = float(input("Enter the width of the floor in meters"))
+h = float(input("Enter the height of the floor in meters"))
+cost = float(input("Enter the cost of flooring tiles per meter square in Indaian Rupees"))
+area = float(w * h)
+print("The cost of flooring with the specified width and height is: Rs.", (area / cost))
