@@ -5,10 +5,15 @@ def pyg(words):
             # a = word[i]
             if word[i] not in ['a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U']:
                 cnsnnt += (word[i])
+                if cnsnnt == word:
+                    print(str(cnsnnt) + "ay", end=" ")
+                    cnsnnt = ""
             else:
                 print(word[i:] + str(cnsnnt) + "ay", end=" ")
                 cnsnnt = ""
                 break
+
+
 
 
 
